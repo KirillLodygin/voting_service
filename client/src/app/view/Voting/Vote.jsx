@@ -25,7 +25,6 @@ const Vote = (props) => {
         return props.pair || [];
     };
 
-
     return(
         <GlobalField>
             {getPair().map((entry, i) =>
