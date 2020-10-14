@@ -10,6 +10,7 @@ const Block = styled('div')`
     align-items: center;
     justify-content: center;
     height: auto;
+    margin-bottom: 100px;
 `;
 
 const Voted = styled(FlashDiv)`
