@@ -6,7 +6,6 @@ import Vote from './Vote';
 import Winner from '../Winner';
 
 import {vote} from '../../redux/actions/votingConditionActions';
-import {voted} from '../../redux/actions/votedActions';
 
 const animationOrders = [
     [keyframes`${fadeInDown}`, keyframes`${fadeInUp}`],
@@ -17,24 +16,17 @@ const animationOrders = [
 
 class Voting extends PureComponent {
     render() {
-        const {
-            votingCondition,
-            votedState,
-            votedAction,
-            voteAction,
-        } = this.props;
 
         return (
             <div>
-                {votingCondition.get('winner') ?
-                    <Winner winner={votingCondition.get('winner')}/> :
+                {this.props.votingCondition.get('winner') ?
+                    <Winner winner={this.props.votingCondition.get('winner')}/> :
                     <Vote
-                        pair={votingCondition.getIn(['vote', 'pair'])}
-                        cN={votingCondition.get('colorsNumbers')}
-                        vote={voteAction}
-                        hasVoted={votingCondition.getIn(['myVote', 'entry'])}
-                        vS={votedState.voted}
-                        voted={votedAction}
+                        pair={this.props.votingCondition.getIn(['vote', 'pair'])}
+                        cN={this.props.votingCondition.get('colorsNumbers')}
+                        vote={this.props.voteAction}
+                        hasVoted={this.props.votingCondition.getIn(['myVote', 'entry'])}
+                        vS={!!this.props.votingCondition.getIn(['myVote', 'entry'])}
                         animationOrder={animationOrders[Math.floor(Math.random()*4)]}
                     />}
             </div>
@@ -44,14 +36,12 @@ class Voting extends PureComponent {
 
 const mapStateToProps = (store) => {
     return {
-        votingCondition: store.votingCondition,
-        votedState: store.votedState
+        votingCondition: store.votingCondition
     };
 };
 
 const mapDispatchToProps = dispatch => ({
     voteAction: entry => dispatch(vote(entry)),
-    votedAction: status => dispatch(voted(status))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Voting);

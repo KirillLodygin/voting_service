@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-//import useSound from 'use-sound';
+import useSound from 'use-sound';
 import {fieldsColor, buttonsColor} from '../../colors_maps';
 import {PulseDiv} from './PulseDiv';
-//import btnSound from '../../sounds/btnSound.mp3';
+import btnSound from '../../sounds/btnSound.mp3';
 
 const BtnAfterVoting = styled.div`
      position: relative;
@@ -54,10 +54,8 @@ const Span1 = styled(BtnSpan)`
     width: 100%;
     height: 3px;
     background: linear-gradient(90deg, transparent, ${props => buttonsColor[props.num]});
-`;
-
-const Span1a = styled(Span1)`
-    ${Btn}:hover & {
+    
+     ${BtnBeforeVoting}:hover & {
         left: 100%;
     }
 `;
@@ -68,13 +66,12 @@ const Span2 = styled(BtnSpan)`
     width: 3px;
     height: 100%;
     background: linear-gradient(180deg, transparent, ${props => buttonsColor[props.num]});
-`;
-
-const Span2a = styled(Span2)`
-    ${Btn}:hover & {
+    
+    ${BtnBeforeVoting}:hover & {
         top: 100%;
     }
 `;
+
 
 const Span3 = styled(BtnSpan)`
     bottom: 0;
@@ -82,12 +79,10 @@ const Span3 = styled(BtnSpan)`
     width: 100%;
     height: 3px;
     background: linear-gradient(270deg, transparent, ${props => buttonsColor[props.num]});
-`;
-
-const Span3a = styled(Span3)`
-     ${Btn}:hover & {
+    
+    ${BtnBeforeVoting}:hover & {
         right: 100%;
-    }
+     }
 `;
 
 const Span4 = styled(BtnSpan)`
@@ -96,10 +91,8 @@ const Span4 = styled(BtnSpan)`
     width: 3px;
     height: 100%;
     background: linear-gradient(0, transparent, ${props => buttonsColor[props.num]});
-`;
-
-const Span4a = styled(Span4)`
-    ${Btn}:hover & {
+    
+    ${BtnBeforeVoting}:hover & {
         bottom: 100%;
     }
 `;
@@ -115,72 +108,71 @@ const SmallBtn = styled(PulseDiv)`
      font-size: 40px;
      padding: 10px 15px;
      letterSpacing: 3px;
-     cursor: ${props => props.vS ? 'pointer' : 'default'};
-     color: ${props => fieldsColor[props.num]};
-     background: ${props => buttonsColor[props.num]};
+     cursor: pointer;
+     color: #031321;
+     background: #008500;
      transition: 1s ease;
-     box-shadow: 0 0 10px ${props => buttonsColor[props.num]},
-                 0 0 40px ${props => buttonsColor[props.num]},
-                 0 0 80px ${props => buttonsColor[props.num]}; 
+     box-shadow: 0 0 10px #008500,
+                 0 0 40px #008500,
+                 0 0 80px #008500; 
 `;
 
 export const VotingBtn = (props) => {
-    const {num, entry, hasVoted, vote, vS, voted} = props;
-    console.log(vS);
     const spans = [1, 2, 3, 4].map((i) => {
             switch (i) {
                 case 1:
-                    return (vS) ? <Span1 key={i} num={num}/> : <Span1a key={i} num={num}/>;
+                    return <Span1 key={i} num={props.num}/>;
 
                 case 2:
-                    return (vS) ? <Span2 key={i} num={num}/> : <Span2a key={i} num={num}/>;
+                    return <Span2 key={i} num={props.num}/>;
 
                 case 3:
-                    return (vS) ? <Span3 key={i} num={num}/> : <Span3a key={i} num={num}/>;
+                    return <Span3 key={i} num={props.num}/>;
 
                 default:
-                    return (vS) ? <Span4 key={i} num={num}/> : <Span4a key={i} num={num}/>;
+                    return <Span4 key={i} num={props.num}/>;
             }
         }
     );
-    //const [play] = useSound(btnSound);
+    const [play] = useSound(btnSound);
 
     return (
         <BtnWrapper>
             {
-                (vS) ?
-                    <Btn
-                        num={num}
-                        selected={hasVoted === entry}
-                        vS={vS}
-                    >
-                        {spans}
-                        {entry}
-                    </Btn> :
-                    <BtnHv
-                        num={num}
-                        selected={hasVoted === entry}
-                        vS={vS}
+                (!props.vS) ?
+                    <BtnBeforeVoting
+                        num={props.num}
                         onClick={() => {
-                            vote(entry);
-                            voted(!vS);
+                            play();
+                            props.vote(props.entry);
                         }}
                     >
                         {spans}
-                        {entry}
-                    </BtnHv>
+                        {props.entry}
+                    </BtnBeforeVoting> :
+                    (props.hasVoted === props.entry) ?
+                        <VotedBtn
+                            num={props.num}
+                        >
+                            {props.entry}
+                        </VotedBtn> :
+                        <BtnAfterVoting
+                            num={props.num}
+                        >
+                            {props.entry}
+                        </BtnAfterVoting>
             }
         </BtnWrapper>
     )
 };
 
 export const TacticBtn = (props) => {
-    //const [play] = useSound(btnSound);
+    const [play] = useSound(btnSound);
     return (
         <SmallBtn
             interval={'3s'}
-            num={props.num}
             onClick={() => {
+                play();
                 props.handleClick();
             }
             }

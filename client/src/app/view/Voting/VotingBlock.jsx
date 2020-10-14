@@ -29,7 +29,7 @@ const VotingBlock = (props) => {
         (
             <Voted
                 num={props.num}
-                interval={'10s'}
+                interval={'7s'}
             >
                 Voted
             </Voted>
@@ -45,7 +45,6 @@ const VotingBlock = (props) => {
                 hasVoted={props.hasVoted}
                 vote={props.vote}
                 vS={props.vS}
-                voted={props.voted}
             />
 
         </Block>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import styled from 'styled-components';
 import { fieldsColor } from '../../colors_maps';
 import { CompleteField } from '../components/Fields';
@@ -25,6 +25,7 @@ const Vote = (props) => {
         return props.pair || [];
     };
 
+
     return(
         <GlobalField>
             {getPair().map((entry, i) =>
@@ -32,7 +33,7 @@ const Vote = (props) => {
                     key={entry}
                     num={props.cN[i]}
                     animation={props.animationOrder[i]}
-                    vS={props.votedState}
+                    vS={props.vS}
                 >
                     <VotingBlock
                         num={props.cN[i]}
@@ -40,7 +41,6 @@ const Vote = (props) => {
                         hasVoted={props.hasVoted}
                         vote={props.vote}
                         vS={props.vS}
-                        voted={props.voted}
                     />
                 </VotingField>
             )}

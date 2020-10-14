@@ -34,12 +34,10 @@ class Results extends PureComponent {
                     <Tactics>
 
                         <TacticBtn
-                            num={6}
                             tactic={'Restart'}
                             handleClick={this.props.restart}
                         />
                         <TacticBtn
-                            num={6}
                             tactic={'Next'}
                             handleClick={this.props.next}
                         />

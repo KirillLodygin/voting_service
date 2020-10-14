@@ -4,8 +4,7 @@ export const fieldsColor = [
     '#1D7373',
     '#BF7130',
     '#006363',
-    '#A64B00',
-    '#031321'
+    '#A64B00'
 ] ;
 
 export const buttonsColor = [
@@ -14,6 +13,5 @@ export const buttonsColor = [
     '#BF3030',
     '#008500',
     '#FF0000',
-    '#00CC00',
-    '#008500'
+    '#00CC00'
 ];
