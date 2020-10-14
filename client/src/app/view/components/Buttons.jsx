@@ -5,36 +5,40 @@ import {fieldsColor, buttonsColor} from '../../colors_maps';
 import {PulseDiv} from './PulseDiv';
 //import btnSound from '../../sounds/btnSound.mp3';
 
-const Btn = styled.div`
+const BtnAfterVoting = styled.div`
      position: relative;
      display: inline-block;
      font-family: 'RobotoCondensed';
      font-size: 50px;
      padding: 10px 15px;
      margin-bottom: 80px;
-     color: ${props => (props.selected) ? fieldsColor[props.num] : buttonsColor[props.num]};
+     color: ${props => buttonsColor[props.num]};
      letterSpacing: 3px;
-     background: ${props => (props.selected) ? buttonsColor[props.num] : 'transparent'};
+     background: transparent;
      overflow: hidden;
      transition: .6s ease;
      border: none;
      cursor: wait;
-     box-shadow: 0 0  ${props => (props.selected) ? '10px' : '0'} ${props => buttonsColor[props.num]},
-                  0 0 ${props => (props.selected) ? '40px' : '0'} ${props => buttonsColor[props.num]},
-                  0 0 ${props => (props.selected) ? '80px' : '0'} ${props => buttonsColor[props.num]};
 `;
 
-const BtnHv = styled(Btn)`
+const BtnBeforeVoting = styled(BtnAfterVoting)`
      cursor: pointer;
-     
-    &:hover {
-        color: ${props => (!props.vS) ? fieldsColor[props.num] : buttonsColor[props.num] };
-        background: ${props => (props.vS) ? buttonsColor[props.num] : 'transparent'};
-        transition-delay: .5s;
-        box-shadow: 0 0 10px ${props => (!props.vS) ? buttonsColor[props.num] : 'transparent'},
-                    0 0 40px ${props => (!props.vS) ? buttonsColor[props.num] : 'transparent'},
-                    0 0 80px ${props => (!props.vS) ? buttonsColor[props.num] : 'transparent'}
-    }
+     &:hover {
+       color: ${props => fieldsColor[props.num]};
+       background: ${props => buttonsColor[props.num]};
+       transition-delay: .5s;
+       box-shadow: 0 0 10px ${props => buttonsColor[props.num]},
+                   0 0 40px ${props => buttonsColor[props.num]},
+                   0 0 80px ${props => buttonsColor[props.num]};
+     }
+`;
+
+const VotedBtn = styled(BtnAfterVoting)`
+    background: ${props => buttonsColor[props.num]};
+    color: ${props => fieldsColor[props.num]};
+    box-shadow: 0 0 10px ${props => buttonsColor[props.num]},
+                0 0 40px ${props => buttonsColor[props.num]},
+                0 0 80px ${props => buttonsColor[props.num]};
 `;
 
 const BtnSpan = styled('span')`
@@ -176,7 +180,7 @@ export const TacticBtn = (props) => {
         <SmallBtn
             interval={'3s'}
             num={props.num}
-            onClick={() =>{
+            onClick={() => {
                 props.handleClick();
             }
             }

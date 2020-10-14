@@ -1,76 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="240fe46a-0645-4ccd-a64d-cfe8c6b4e61b" name="Default Changelist" comment="client_&amp;_server">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/voting_service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/client_id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/colors_maps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/fonts/Gochi_Hand/GochiHand-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/fonts/Gochi_Hand/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/fonts/Roboto_Condensed/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/fonts/Roboto_Condensed/RobotoCondensed-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/fonts/Roboto_Condensed/RobotoCondensed-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/redux/actions/connectionStateActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/redux/actions/next_and_restart_action_creators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/redux/actions/votedActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/redux/actions/votingConditionActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/redux/configureStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/redux/reducers/connectionState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/redux/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/redux/reducers/voted.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/redux/reducers/votingCondition.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/redux/remote_action_middleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/sounds/btnSound.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/view/ConnectionState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/view/Results/Results.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/view/Results/Tally.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/view/Voting/Vote.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/view/Voting/Voting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/view/Voting/VotingBlock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/view/Winner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/view/components/Buttons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/view/components/Fields.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/view/components/FlashDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/view/components/PulseDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/test_helper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/entries.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/test/core_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/test/immutable_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/test/reducer_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/test/store_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/test/test_helper.js" afterDir="false" />
+    <list default="true" id="240fe46a-0645-4ccd-a64d-cfe8c6b4e61b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/view/components/Buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/components/Buttons.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,8 +17,65 @@
       <executable />
     </execution>
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/app/view/components/Buttons.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#103#163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/view/Voting/Vote.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/view/Voting/Voting.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/view/Voting/VotingBlock.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/client/src/app/view/components/Buttons.js" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
@@ -121,6 +112,41 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voting_service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voting_service" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voting_service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voting_service" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voting_service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voting_service" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="Results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voting_service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voting_service" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="Voting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="voting_service" type="b2602c69:ProjectViewProjectNode" />
@@ -162,12 +188,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602690771071</updated>
-      <workItem from="1602690774903" duration="1686000" />
+      <workItem from="1602690774903" duration="4334000" />
     </task>
+    <task id="LOCAL-00001" summary="client_&amp;_server">
+      <created>1602692849892</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602692849892</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1686000" />
+    <option name="totallyTimeSpent" value="4334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -195,5 +229,64 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="client_&amp;_server" />
+    <option name="LAST_COMMIT_MESSAGE" value="client_&amp;_server" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/view/Results/Results.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/view/components/Fields.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/view/Voting/Vote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/view/Voting/Voting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/view/Voting/VotingBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/view/components/Buttons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#103#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
