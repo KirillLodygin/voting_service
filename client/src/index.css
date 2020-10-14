@@ -1,0 +1,45 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'RobotoCondensed', 'GochiHand', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face{
+
+  font-family: 'RobotoCondensed';
+
+  src: url('./app/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf') format('truetype'),
+  url('./app/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf') format('truetype'),
+  url('./app/fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf') format('truetype'),
+  url('./app/fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf') format('truetype'),
+  url('./app/fonts/Roboto_Condensed/RobotoCondensed-LightItalic.ttf') format('truetype'),
+  url('./app/fonts/Roboto_Condensed/RobotoCondensed-Light.ttf') format('truetype');
+
+  font-weight: 700;
+
+  font-style: normal;
+}
+
+@font-face{
+
+  font-family: 'GochiHand';
+
+  src: url('./app/fonts/Gochi_Hand/GochiHand-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
