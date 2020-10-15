@@ -2,7 +2,6 @@ import { Map } from 'immutable';
 
 export  const SET_CLIENT_ID = 'SET_CLIENT_ID';
 export const SET_STATE = 'SET_STATE';
-export const RANDOM_COLORS = 'RANDOM_COLORS';
 export const VOTE = 'VOTE';
 
 const setState = (state, newState) => {
@@ -29,15 +28,6 @@ const vote = (state, entry) => {
     }
 };
 
-const randomNumbers = (state) => {
-    let colorsNumbers = [];
-    let firstColor = Math.floor(Math.random() * 6);
-    colorsNumbers.push(firstColor);
-    let secondColor = (firstColor & 1) ? --firstColor : ++firstColor;
-    colorsNumbers.push(secondColor);
-    return state.set('colorsNumbers', colorsNumbers);
-};
-
 export const votingCondition = (state = Map(), action) => {
     switch (action.type) {
         case SET_CLIENT_ID:
@@ -45,9 +35,6 @@ export const votingCondition = (state = Map(), action) => {
 
         case SET_STATE:
             return setState(state, action.payload);
-
-        case RANDOM_COLORS:
-            return randomNumbers(state);
 
         case VOTE:
             return vote(state, action.entry);

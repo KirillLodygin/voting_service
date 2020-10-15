@@ -10,8 +10,7 @@ import App from './App';
 
 import {
     setClientId,
-    votingState,
-    randomColors
+    votingState
 } from './app/redux/actions/votingConditionActions';
 import { setConnectionState } from './app/redux/actions/connectionStateActions';
 import getClientId from './app/client_id';
@@ -34,7 +33,6 @@ socket.on('state', state =>
 
 export const store = configureStore(socket);
 store.dispatch(setClientId(getClientId()));
-store.dispatch(randomColors());
 
 ReactDOM.render(
     <Provider store={store}>
