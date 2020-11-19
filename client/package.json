@@ -21,10 +21,8 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "save": "^2.4.0",
     "socket.io-client": "^2.3.0",
     "styled-components": "^5.2.0",
-    "styled-system": "^5.1.5",
     "use-sound": "^1.0.2",
     "uuid": "^8.3.0"
   },
