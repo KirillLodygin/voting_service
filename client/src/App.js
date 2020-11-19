@@ -1,6 +1,5 @@
 import React, { Component }from 'react';
 import styled from 'styled-components';
-//import theme from './theme'
 import './App.css';
 import ConnectionState from './app/view/ConnectionState';
 
