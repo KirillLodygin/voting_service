@@ -9,36 +9,36 @@ import './index.css';
 import App from './App';
 
 import {
-    setClientId,
-    votingState
+	setClientId,
+	votingState,
 } from './app/redux/actions/votingConditionActions';
 import { setConnectionState } from './app/redux/actions/connectionStateActions';
 import getClientId from './app/client_id';
 
-const socket = io(`${window.location.protocol}//${window.location.hostname}:8090`);
-socket.on('state', state =>
-    store.dispatch(votingState(state))
+const socket = io(
+	`${window.location.protocol}//${window.location.hostname}:8090`
 );
+socket.on('state', (state) => store.dispatch(votingState(state)));
 [
-    'connect',
-    'connect_error',
-    'connect_timeout',
-    'reconnect',
-    'reconnecting',
-    'reconnect_error',
-    'reconnect_failed'
-].forEach(ev =>
-    socket.on(ev, () => store.dispatch(setConnectionState(ev, socket.connected)))
+	'connect',
+	'connect_error',
+	'connect_timeout',
+	'reconnect',
+	'reconnecting',
+	'reconnect_error',
+	'reconnect_failed',
+].forEach((ev) =>
+	socket.on(ev, () => store.dispatch(setConnectionState(ev, socket.connected)))
 );
 
 export const store = configureStore(socket);
 store.dispatch(setClientId(getClientId()));
 
 ReactDOM.render(
-    <Provider store={store}>
-        <ConnectedRouter history={history}>
-            <App />
-        </ConnectedRouter>
-    </Provider>,
-  document.getElementById('root')
+	<Provider store={store}>
+		<ConnectedRouter history={history}>
+			<App />
+		</ConnectedRouter>
+	</Provider>,
+	document.getElementById('root')
 );

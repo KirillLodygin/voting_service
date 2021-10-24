@@ -9,13 +9,18 @@ import createrootReducer from './reducers';
 export const history = createBrowserHistory();
 
 export default function configureStore(socket) {
-    const store = createStore(
-        createrootReducer(history),
-        compose(
-            applyMiddleware(routerMiddleware(history), thunk, logger, remoteActionMiddleware(socket)),
-            window.__REDUX_DEVTOOLS_EXTENSION__
-                ? window.__REDUX_DEVTOOLS_EXTENSION__()
-                : f => f
-        )
-    );
-    return store;}
+	return createStore(
+		createrootReducer(history),
+		compose(
+			applyMiddleware(
+				routerMiddleware(history),
+				thunk,
+				logger,
+				remoteActionMiddleware(socket)
+			),
+			window.__REDUX_DEVTOOLS_EXTENSION__
+				? window.__REDUX_DEVTOOLS_EXTENSION__()
+				: (f) => f
+		)
+	);
+}

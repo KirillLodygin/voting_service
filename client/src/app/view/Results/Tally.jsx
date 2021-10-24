@@ -1,20 +1,20 @@
 import React from 'react';
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 const TallyBlock = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	margin-bottom: 50px;
 `;
 
 const EntryBlock = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 70px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 70px;
 `;
 
 const textFlicker = keyframes`
@@ -81,11 +81,11 @@ const textFlicker = keyframes`
 `;
 
 const Entry = styled.div`
-    width: 55%;
-    font-family: 'RobotoCondensed';
-    font-size: 70px;
-    color: #BF3030;
-    animation: ${textFlicker} 5s infinite ease;
+	width: 55%;
+	font-family: 'RobotoCondensed';
+	font-size: 70px;
+	color: #bf3030;
+	animation: ${textFlicker} 5s infinite ease;
 `;
 
 const voteFlicker = keyframes`
@@ -152,38 +152,36 @@ const voteFlicker = keyframes`
 `;
 
 const VoteCount = styled.div`
-    width: 45%;
-    font-family: 'GochiHand';
-    font-size: 110px;
-    color: #008500;
-    margin-bottom: 0;
-    animation: ${voteFlicker} 5s infinite ease-in;
+	width: 45%;
+	font-family: 'GochiHand';
+	font-size: 110px;
+	color: #008500;
+	margin-bottom: 0;
+	animation: ${voteFlicker} 5s infinite ease-in;
 `;
 
-const Tally  = (props) => {
-    const getPair = () => {
-        return props.pair || [];
-    };
+const Tally = (props) => {
+	const getPair = () => {
+		return props.pair || [];
+	};
 
-    const getVotes = (entry) => {
-        if (props.tally && (entry in props.tally)) {
-            return props.tally[entry];
-        }
-        return 0;
-    };
+	const getVotes = (entry) => {
+		if (props.tally && entry in props.tally) {
+			return props.tally[entry];
+		}
+		return 0;
+	};
 
-    return (
-        <TallyBlock>
-            {getPair().map(entry =>
-                <EntryBlock key={entry}>
-                    <Entry>{entry}</Entry>
-                    <VoteCount>
-                        {getVotes(entry)}
-                    </VoteCount>
-                </EntryBlock>
-            )}
-        </TallyBlock>
-    )
+	return (
+		<TallyBlock>
+			{getPair().map((entry) => (
+				<EntryBlock key={entry}>
+					<Entry>{entry}</Entry>
+					<VoteCount>{getVotes(entry)}</VoteCount>
+				</EntryBlock>
+			))}
+		</TallyBlock>
+	);
 };
 
 export default Tally;

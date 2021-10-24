@@ -1,12 +1,11 @@
 import React from 'react';
-import {CompleteField} from './components/Fields';
-import styled, {keyframes} from "styled-components";
-
+import { CompleteField } from './components/Fields';
+import styled, { keyframes } from 'styled-components';
 
 const WinnerField = styled(CompleteField)`
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 `;
 
 const frameFlicker = keyframes`
@@ -151,14 +150,14 @@ const winnerFlicker = keyframes`
 `;
 
 const AdWinner = styled('div')`
-    padding: 5px 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: 'GochiHand';
-    font-size: 90px;
-    color: #008500;
-    margin-bottom: 0;
-    animation: ${winnerFlicker} 3s infinite linear;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: 'GochiHand';
+	font-size: 90px;
+	color: #008500;
+	margin-bottom: 0;
+	animation: ${winnerFlicker} 3s infinite linear;
 `;
 
 const textFlicker = keyframes`
@@ -225,12 +224,12 @@ const textFlicker = keyframes`
 `;
 
 const Advt = styled.div`
-    padding: 5px 10px;
-    text-align: center;
-    font-family: 'RobotoCondensed';
-    font-size: 80px;
-    color: #BF3030;
-    animation: ${textFlicker} 5s infinite linear;
+	padding: 5px 10px;
+	text-align: center;
+	font-family: 'RobotoCondensed';
+	font-size: 80px;
+	color: #bf3030;
+	animation: ${textFlicker} 5s infinite linear;
 `;
 
 const letterFlicker = keyframes`
@@ -289,25 +288,29 @@ const letterFlicker = keyframes`
 `;
 
 const Letter = styled('span')`
-  animation: ${letterFlicker} 3s infinite ease;
+	animation: ${letterFlicker} 3s infinite ease;
 `;
 
- const Winner = (props) => {
-     let str = '';
-     for (let i = 0; i < (props.winner.length - 2); i++) {
-         str += props.winner[i];
-     }
+const Winner = (props) => {
+	let str = '';
+	for (let i = 0; i < props.winner.length - 2; i++) {
+		str += props.winner[i];
+	}
 
-     return (
-         <WinnerField>
-             <Frame>
-                 <AdWinner>Winner is</AdWinner>
-                 <Advt>
-                     <span>{str}<Letter>{props.winner[props.winner.length - 2]}</Letter>{props.winner[props.winner.length - 1]}</span>
-                 </Advt>
-             </Frame>
-         </WinnerField>
-     )
+	return (
+		<WinnerField>
+			<Frame>
+				<AdWinner>Winner is</AdWinner>
+				<Advt>
+					<span>
+						{str}
+						<Letter>{props.winner[props.winner.length - 2]}</Letter>
+						{props.winner[props.winner.length - 1]}
+					</span>
+				</Advt>
+			</Frame>
+		</WinnerField>
+	);
 };
 
 export default Winner;
