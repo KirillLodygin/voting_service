@@ -1,39 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="240fe46a-0645-4ccd-a64d-cfe8c6b4e61b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/client_id.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/client_id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/colors_maps.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/colors_maps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/redux/actions/connectionStateActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/redux/actions/connectionStateActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/redux/actions/next_and_restart_action_creators.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/redux/actions/next_and_restart_action_creators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/redux/actions/votingConditionActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/redux/actions/votingConditionActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/redux/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/redux/configureStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/redux/remote_action_middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/redux/remote_action_middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view/ConnectionState.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/ConnectionState.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view/Results/Results.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/Results/Results.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view/Results/Tally.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/Results/Tally.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view/Voting/Vote.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/Voting/Vote.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view/Voting/Voting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/Voting/Voting.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view/Voting/VotingBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/Voting/VotingBlock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view/Winner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/Winner.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view/components/Buttons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/components/Buttons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view/components/Fields.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/components/Fields.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view/components/FlashDiv.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/components/FlashDiv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/view/components/PulseDiv.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/view/components/PulseDiv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.jsx" afterDir="false" />
+    <list default="true" id="240fe46a-0645-4ccd-a64d-cfe8c6b4e61b" name="Default Changelist" comment="client_&amp;_server">
+      <change afterPath="$PROJECT_DIR$/server/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +161,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -201,11 +172,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Kirilll\PhpstormProjects\voting_service\client\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kirilll\PhpstormProjects\voting_service\server" />
       <recent name="C:\Users\Kirilll\PhpstormProjects\voting_service\client" />
     </key>
   </component>
@@ -253,7 +225,7 @@
       <workItem from="1628533809300" duration="131000" />
       <workItem from="1628578352000" duration="267000" />
       <workItem from="1632592321982" duration="441000" />
-      <workItem from="1635074913386" duration="3124000" />
+      <workItem from="1635074913386" duration="3346000" />
     </task>
     <task id="LOCAL-00001" summary="client_&amp;_server">
       <created>1602692849892</created>
@@ -325,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606040973167</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="client_&amp;_server">
+      <created>1635078176493</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1635078176493</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
